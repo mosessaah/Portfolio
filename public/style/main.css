@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}  
+
+.header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 20px 10px; 
+    background: transparent;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    z-index: 100; 
+}
+
+.logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: rgba(246, 246, 168, 0.951);
+    font-weight: 800; 
+    width: 130;
+    height: 50;
+    border: solid;
+    border-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navb {
+    margin-left: 500px;
+}
+
+.navb a {
+    font-size: 18px;
+    text-decoration: none;
+    color: beige;
+    font-weight: 600;
+    margin-left: 45px; 
+    transition: 1s;
+}
+
+.navb a:hover,
+.navb a.active
+{
+    color: cadetblue;
+}
+div {
+    display: flex;
+    gap: 30px;
+}
+.imge {
+    width: 50px;
+    height: 50px;
+}
+.home {
+    height: 100vh;
+    background: #081b29;
+    display:flex;
+    align-items: center;
+    padding: 0 25%;
+}
+
+.home-content {
+    display:inline-block;
+    max-width: 700px;
+}
+
+.home-content h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    font-weight: 600;;
+    line-height: 1.2;
+    color: #ededed;
+}
+.home-content h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    color: hsl(161, 34%, 64%);
+}
+
+.home-content .p1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.home-content p {
+    font-size: 17px;
+    margin: 20px 0 20px ;
+    color: hsl(253, 4%, 53%);
+    font-family: 'Roboto Mono', monospace;
+    max-width: 550px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    align-items: center;
+    background: rgba(243, 243, 179, 0.951);
+    border: 2px solid rgba(243, 243, 179, 0.951);
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    color: #081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: hsl(161, 34%, 64%);
+}
+
+/* About Me Section */
+.about {
+    background: #081b29;
+    display:flex;
+    align-items: center;
+    padding: 15%;
+    gap: 50px;
+
+}
+
+.abt-content {
+    display:inline-block;
+    max-width: 600px;
+}
+.abt-head {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 500;;
+    line-height: 1.2;
+    color: #ededed;
+}
+
+.abt-content h1:after {
+    display: block;
+    content:" ";
+    height: 0.10px;
+    width: 290px;
+    background: #56907d;;
+    position: absolute;
+    top: 50%;
+    right:20px;
+  }
+
+.abt-content h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: hsl(161, 34%, 64%);
+}
+
+.abt-content p {
+    font-size: 17px;
+    margin: 10px 0 15px ;
+    color: hsl(253, 4%, 53%);
+    font-family: 'Rubik', sans-serif;
+    max-width: 500px;
+}
+
+.abt-image {
+    position:relative;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 60px;
+}
+
+/* SKILL SECTION  */
+.skills {
+    height: 100vh;
+    display: inline-block;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    height: 100vh;
+    background: #081b29;
+    display:flex;
+    align-items: center;
+    padding: 5%; 
+    flex-direction: column;
+}
+
+.p-head {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 500;;
+    line-height: 1.2;
+    color: #ededed;
+}
+
+.p-head1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    color: hsl(161, 34%, 64%);
+    margin-bottom: 30px;
+}
+
+.p-port {
+    display:inline-flex;
+    max-width: 800px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.p-column{
+    width: 800px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.p {      
+    width: 220px;
+    background: hwb(206 5% 76%);
+    height: 190px;
+    padding:2%; 
+} 
+.img-folder {
+    height: 30px;
+    width: 30px;
+}
+.img-connect {
+    margin-left: 140px;  
+    height: 20px;
+    width: 20px;
+}
+
+.img-github {
+    height: 20px;
+    width: 20px;
+}
